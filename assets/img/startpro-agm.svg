@@ -3,9 +3,7 @@
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f7f9fc"/><stop offset="1" stop-color="#eef1f6"/>
     </linearGradient>
-    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3a4a61"/><stop offset="1" stop-color="#334155"/>
-    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#28323f"/><stop offset="1" stop-color="#151c26"/></linearGradient>
     <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0" stop-color="rgba(15,23,42,.18)"/><stop offset="1" stop-color="rgba(15,23,42,0)"/>
     </radialGradient>
@@ -14,14 +12,14 @@
   <ellipse cx="300" cy="430" rx="180" ry="26" fill="url(#shadow)"/>
   
         <rect x="150" y="185" width="300" height="230" rx="14" fill="url(#body)"/>
-        <rect x="150" y="185" width="300" height="60" rx="14" fill="#242e3d"/>
+        <rect x="150" y="185" width="300" height="60" rx="14" fill="#159fd8"/>
         <rect x="150" y="235" width="300" height="10" fill="rgba(255,255,255,.18)"/>
-        <rect x="205" y="150" width="40" height="42" rx="6" fill="#242e3d"/>
-        <rect x="355" y="150" width="40" height="42" rx="6" fill="#242e3d"/>
+        <rect x="205" y="150" width="40" height="42" rx="6" fill="#159fd8"/>
+        <rect x="355" y="150" width="40" height="42" rx="6" fill="#159fd8"/>
         <rect x="211" y="140" width="28" height="16" rx="4" fill="#c9ced6"/>
         <rect x="361" y="140" width="28" height="16" rx="4" fill="#c9ced6"/>
         <text x="215" y="176" font-family="Arial" font-size="20" font-weight="700" fill="#fff">+</text>
         <text x="368" y="176" font-family="Arial" font-size="22" font-weight="700" fill="#fff">-</text>
-  <text x="300" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#242e3d" letter-spacing="1">12V 60Ah</text>
+  <text x="300" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#159fd8" letter-spacing="1">12V 60Ah</text>
   <text x="300" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#8a93a3" letter-spacing="3">START-STOP</text>
 </svg>

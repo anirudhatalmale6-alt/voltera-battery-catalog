@@ -1,7 +1,8 @@
-# Voltera — Battery Catalog (Mockup)
+# TitanCell — Battery Catalog (Mockup)
 
-A clean, minimalist showcase catalog for battery products. This is a design mockup
-(homepage + product detail page) built with sample data.
+A clean, minimalist showcase catalog for battery products, with a branded cyan
+"lightning" energy theme matched to the TitanCell packaging artwork. This is a
+design mockup (homepage + product detail page) built with sample data.
 
 ## Pages
 - `index.html` — homepage: hero, 8-product catalog grid, "why" strip, contact/quote CTA

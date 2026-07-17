@@ -4,11 +4,11 @@
   --ink:#0f1b2d;
   --muted:#5f6b7c;
   --line:#e7ecf3;
-  --accent:#2f6df6;
-  --accent-dark:#1e4fd0;
-  --electric:#4f9dff;
-  --electric-2:#8b5cff;
-  --glow:rgba(79,157,255,.55);
+  --accent:#159fd8;
+  --accent-dark:#0c7cae;
+  --electric:#2ec8ff;
+  --electric-2:#7ee6ff;
+  --glow:rgba(46,200,255,.55);
   --radius:16px;
   --shadow:0 12px 40px rgba(15,27,45,.08);
   --maxw:1180px;
@@ -25,7 +25,7 @@ a{color:inherit;text-decoration:none}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
 .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.18rem;letter-spacing:-.02em}
-.brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#6aa0ff);display:grid;place-items:center}
+.brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#0c7cae,#2ec8ff);display:grid;place-items:center}
 .brand .mark svg{width:19px;height:19px}
 .nav{display:flex;align-items:center;gap:34px}
 .nav a{color:var(--muted);font-weight:500;font-size:.95rem;transition:color .2s}
@@ -86,7 +86,7 @@ a{color:inherit;text-decoration:none}
 
 /* CTA */
 .cta{padding:86px 0}
-.cta-box{background:linear-gradient(135deg,#12213a,#1e3a6e);border-radius:26px;padding:60px 40px;text-align:center;color:#fff;box-shadow:var(--shadow)}
+.cta-box{background:linear-gradient(135deg,#0b1a24,#103a4f);border-radius:26px;padding:60px 40px;text-align:center;color:#fff;box-shadow:var(--shadow)}
 .cta-box h2{font-size:clamp(1.8rem,3.2vw,2.4rem);letter-spacing:-.02em;margin-bottom:14px}
 .cta-box p{color:#c6d4ea;max-width:34rem;margin:0 auto 28px;font-size:1.05rem}
 .cta-box .btn-primary{background:#fff;color:var(--accent-dark)}
@@ -171,63 +171,52 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ============================================================
-   ENERGY / LIGHTNING THEME  — subtle electric accents
+   ENERGY / LIGHTNING THEME  — TitanCell cyan electric accents
+   Matched to the branded packaging: fine branching cyan plasma
+   on a deep charcoal backdrop.
    ============================================================ */
 
 /* Brand mark: pulsing electric glow */
-.brand .mark{position:relative;box-shadow:0 0 0 0 rgba(79,157,255,.5);animation:markPulse 3.2s ease-in-out infinite}
+.brand .mark{position:relative;box-shadow:0 0 0 0 rgba(46,200,255,.5);animation:markPulse 3.2s ease-in-out infinite}
 @keyframes markPulse{
-  0%,100%{box-shadow:0 0 0 0 rgba(79,157,255,.0),0 3px 10px rgba(47,109,246,.35)}
-  50%{box-shadow:0 0 16px 2px rgba(79,157,255,.55),0 3px 10px rgba(47,109,246,.35)}
+  0%,100%{box-shadow:0 0 0 0 rgba(46,200,255,.0),0 3px 10px rgba(21,159,216,.35)}
+  50%{box-shadow:0 0 16px 2px rgba(46,200,255,.6),0 3px 10px rgba(21,159,216,.35)}
 }
 .brand .mark svg path{filter:drop-shadow(0 0 3px rgba(255,255,255,.6))}
 
 /* Primary button: energy glow + sheen sweep on hover */
-.btn-primary{position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(47,109,246,.28)}
+.btn-primary{position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(21,159,216,.28)}
 .btn-primary::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
   background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);
   transform:skewX(-18deg);transition:left .6s ease}
-.btn-primary:hover{box-shadow:0 0 22px rgba(79,157,255,.6),0 8px 22px rgba(47,109,246,.38)}
+.btn-primary:hover{box-shadow:0 0 22px rgba(46,200,255,.6),0 8px 22px rgba(21,159,216,.38)}
 .btn-primary:hover::after{left:130%}
 
-/* ---- HERO: dark premium electric backdrop ---- */
-.hero{background:#0b1424;color:#eaf1ff}
+/* ---- HERO: deep charcoal backdrop with cyan energy ---- */
+.hero{background:#0a0e14;color:#eaf6ff}
 .hero::before{content:"";position:absolute;inset:0;z-index:0;
   background:
-    radial-gradient(720px 360px at 78% 8%,rgba(79,157,255,.28),transparent 60%),
-    radial-gradient(560px 320px at 12% 92%,rgba(139,92,255,.22),transparent 60%),
-    linear-gradient(180deg,#0b1424,#0d1830);
+    radial-gradient(760px 380px at 72% 12%,rgba(46,200,255,.30),transparent 62%),
+    radial-gradient(520px 300px at 14% 94%,rgba(46,200,255,.16),transparent 60%),
+    linear-gradient(180deg,#090d13,#0b131c);
 }
 /* animated conic "energy field" */
-.hero::after{content:"";position:absolute;inset:-40%;z-index:0;opacity:.35;
-  background:conic-gradient(from 0deg at 50% 50%,transparent 0deg,rgba(79,157,255,.15) 60deg,transparent 120deg,rgba(139,92,255,.12) 200deg,transparent 260deg,rgba(79,157,255,.14) 320deg,transparent 360deg);
+.hero::after{content:"";position:absolute;inset:-40%;z-index:0;opacity:.32;
+  background:conic-gradient(from 0deg at 50% 50%,transparent 0deg,rgba(46,200,255,.16) 60deg,transparent 120deg,rgba(126,230,255,.12) 200deg,transparent 260deg,rgba(46,200,255,.15) 320deg,transparent 360deg);
   animation:spinField 22s linear infinite}
 @keyframes spinField{to{transform:rotate(360deg)}}
 .hero .wrap{position:relative;z-index:3}
 #sparks{position:absolute;inset:0;z-index:1;pointer-events:none}
-.hero .eyebrow{background:rgba(79,157,255,.16);color:#9cc6ff}
-.hero p{color:#a9b8d4}
-.hero h1 span{color:#5aa2ff;text-shadow:0 0 24px rgba(79,157,255,.45)}
-.hero .btn-ghost{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#eaf1ff}
-.hero .btn-ghost:hover{border-color:rgba(79,157,255,.6);box-shadow:0 0 18px rgba(79,157,255,.3)}
-.hero-stats .num{color:#fff;text-shadow:0 0 14px rgba(79,157,255,.35)}
-.hero-stats .lbl{color:#8fa2c4}
-.hero-visual{background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(79,157,255,.06));
-  border:1px solid rgba(79,157,255,.22);box-shadow:0 0 60px rgba(79,157,255,.18),inset 0 0 40px rgba(79,157,255,.06)}
-.hero-visual img{filter:drop-shadow(0 12px 30px rgba(79,157,255,.35))}
-/* lightning bolts drawn in hero corners */
-.hero-bolt{position:absolute;z-index:2;pointer-events:none;opacity:0;filter:drop-shadow(0 0 6px rgba(122,180,255,.9))}
-.hero-bolt path{stroke:#bcd8ff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.hero-bolt.b1{top:6%;right:30%;width:70px;animation:strike 6s ease-in-out infinite}
-.hero-bolt.b2{bottom:14%;left:22%;width:54px;animation:strike 6s ease-in-out 3.1s infinite}
-@keyframes strike{
-  0%,100%{opacity:0}
-  46%{opacity:0}
-  48%{opacity:.9}
-  50%{opacity:.15}
-  52%{opacity:.85}
-  56%{opacity:0}
-}
+.hero .eyebrow{background:rgba(46,200,255,.16);color:#8fe4ff}
+.hero p{color:#a4bacb}
+.hero h1 span{color:#3fd0ff;text-shadow:0 0 24px rgba(46,200,255,.5)}
+.hero .btn-ghost{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#eaf6ff}
+.hero .btn-ghost:hover{border-color:rgba(46,200,255,.6);box-shadow:0 0 18px rgba(46,200,255,.3)}
+.hero-stats .num{color:#fff;text-shadow:0 0 14px rgba(46,200,255,.4)}
+.hero-stats .lbl{color:#88a0b4}
+.hero-visual{background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(46,200,255,.07));
+  border:1px solid rgba(46,200,255,.24);box-shadow:0 0 70px rgba(46,200,255,.22),inset 0 0 40px rgba(46,200,255,.07)}
+.hero-visual img{filter:drop-shadow(0 12px 34px rgba(46,200,255,.4))}
 
 /* ---- Section heading: electric underline ---- */
 .section-head h2{position:relative;display:inline-block}
@@ -245,46 +234,46 @@ a{color:inherit;text-decoration:none}
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
   -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .25s}
 .card:hover::before{opacity:1}
-.card:hover{box-shadow:0 14px 40px rgba(15,27,45,.12),0 0 26px rgba(79,157,255,.28)}
+.card:hover{box-shadow:0 14px 40px rgba(15,27,45,.12),0 0 26px rgba(46,200,255,.3)}
 .card-media{position:relative}
 .card-media::after{content:"";position:absolute;inset:0;
-  background:radial-gradient(220px 120px at 50% 120%,rgba(79,157,255,.25),transparent 70%);
+  background:radial-gradient(220px 120px at 50% 120%,rgba(46,200,255,.28),transparent 70%);
   opacity:0;transition:opacity .3s}
 .card:hover .card-media::after{opacity:1}
 .card .view{position:relative}
-.card:hover .view{text-shadow:0 0 10px rgba(79,157,255,.5)}
+.card:hover .view{text-shadow:0 0 10px rgba(46,200,255,.5)}
 
 /* spark badge that flicks on card hover */
 .card .spark{position:absolute;top:12px;right:12px;width:22px;height:22px;z-index:2;opacity:0;transform:scale(.6);
-  transition:opacity .2s,transform .2s;filter:drop-shadow(0 0 6px rgba(79,157,255,.9))}
+  transition:opacity .2s,transform .2s;filter:drop-shadow(0 0 6px rgba(46,200,255,.95))}
 .card:hover .spark{opacity:1;transform:scale(1);animation:flick .9s steps(2) infinite}
 @keyframes flick{0%,100%{opacity:1}50%{opacity:.55}}
 
 /* ---- Feature icons: glow ring ---- */
 .feature .ico{position:relative;transition:box-shadow .3s,transform .3s}
-.feature:hover .ico{box-shadow:0 0 20px rgba(79,157,255,.45);transform:translateY(-2px)}
+.feature:hover .ico{box-shadow:0 0 20px rgba(46,200,255,.5);transform:translateY(-2px)}
 
 /* ---- CTA box: animated electric aura ---- */
 .cta-box{position:relative;overflow:hidden}
 .cta-box::before{content:"";position:absolute;inset:-2px;z-index:0;border-radius:26px;
-  background:conic-gradient(from 0deg,transparent,rgba(79,157,255,.6),transparent 30%,rgba(139,92,255,.5),transparent 55%);
-  animation:spinField 8s linear infinite;opacity:.5}
+  background:conic-gradient(from 0deg,transparent,rgba(46,200,255,.65),transparent 30%,rgba(126,230,255,.5),transparent 55%);
+  animation:spinField 8s linear infinite;opacity:.55}
 .cta-box::after{content:"";position:absolute;inset:2px;border-radius:24px;z-index:0;
-  background:linear-gradient(135deg,#12213a,#1e3a6e)}
+  background:linear-gradient(135deg,#0b1a24,#103a4f)}
 .cta-box>*{position:relative;z-index:1}
 
 /* ---- Product detail: glow on media ---- */
 .pd-media{position:relative}
 .pd-media::before{content:"";position:absolute;inset:0;border-radius:20px;pointer-events:none;
-  box-shadow:inset 0 0 50px rgba(79,157,255,.12);opacity:0;transition:opacity .4s}
+  box-shadow:inset 0 0 50px rgba(46,200,255,.14);opacity:0;transition:opacity .4s}
 .pd-media:hover::before{opacity:1}
 .pd-media img{transition:transform .5s,filter .5s}
-.pd-media:hover img{transform:scale(1.03);filter:drop-shadow(0 14px 30px rgba(79,157,255,.28))}
+.pd-media:hover img{transform:scale(1.03);filter:drop-shadow(0 14px 30px rgba(46,200,255,.3))}
 .pd-price{position:relative}
-.benefits li svg{filter:drop-shadow(0 0 4px rgba(79,157,255,.5))}
+.benefits li svg{filter:drop-shadow(0 0 4px rgba(46,200,255,.5))}
 
 /* Respect reduced-motion */
 @media(prefers-reduced-motion:reduce){
   .hero::after,.cta-box::before,.section-head h2::after,.brand .mark,
-  .hero-bolt,.card:hover .spark{animation:none !important}
+  .card:hover .spark{animation:none !important}
 }
