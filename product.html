@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product — Voltera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" fill="#fff"/></svg></span>
+      Voltera
+    </a>
+    <nav class="nav">
+      <a href="index.html#catalog">Products</a>
+      <a href="index.html#why">Why Voltera</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary">Request a Quote</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / <a href="index.html#catalog">Products</a> / <span id="crumb-name">Product</span></div>
+  <div class="pd" id="product-detail"><!-- injected --></div>
+</div>
+
+<section class="related">
+  <div class="wrap">
+    <h3>You may also like</h3>
+    <div class="grid" id="related-grid"><!-- injected --></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="brand"><span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" fill="#fff"/></svg></span>Voltera</div>
+        <p class="fdesc">Premium battery solutions for solar, marine, automotive and home energy storage.</p>
+      </div>
+      <div class="fcol">
+        <h5>Products</h5>
+        <a href="index.html#catalog">Lithium</a><a href="index.html#catalog">Deep Cycle</a><a href="index.html#catalog">Home Storage</a><a href="index.html#catalog">Automotive</a>
+      </div>
+      <div class="fcol">
+        <h5>Company</h5>
+        <a href="index.html#why">Why Voltera</a><a href="index.html#contact">Request a Quote</a><a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Voltera. All rights reserved.</span>
+      <span>Sample catalog — demo content</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="quoteModal">
+  <div class="modal-backdrop" onclick="closeQuote()"></div>
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeQuote()">✕</button>
+    <h3>Request a Quote</h3>
+    <p class="mm" id="quoteProduct">Tell us what you need and we'll get back to you.</p>
+    <form onsubmit="return submitQuote(event)">
+      <div class="field"><label>Name</label><input required placeholder="Your name"></div>
+      <div class="field"><label>Email</label><input type="email" required placeholder="you@company.com"></div>
+      <div class="field"><label>Message</label><textarea required placeholder="Which product, quantity, and where you'll use it..."></textarea></div>
+      <button class="btn btn-primary" type="submit" style="width:100%">Send request</button>
+      <div class="form-note" id="formNote">Thanks! This is a demo — in the live site this sends straight to your inbox.</div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

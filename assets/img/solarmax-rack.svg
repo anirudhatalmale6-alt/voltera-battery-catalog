@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f9fc"/><stop offset="1" stop-color="#eef1f6"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffbd29"/><stop offset="1" stop-color="#f5a524"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="rgba(15,23,42,.18)"/><stop offset="1" stop-color="rgba(15,23,42,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="430" rx="180" ry="26" fill="url(#shadow)"/>
+  
+        <rect x="120" y="230" width="360" height="150" rx="12" fill="url(#body)"/>
+        <rect x="120" y="230" width="360" height="150" rx="12" fill="none" stroke="#b07619" stroke-width="6"/>
+        <circle cx="160" cy="255" r="6" fill="#ffbd29"/><circle cx="182" cy="255" r="6" fill="rgba(255,255,255,.4)"/>
+        <rect x="150" y="300" width="120" height="46" rx="6" fill="rgba(0,0,0,.18)"/>
+        <rect x="410" y="300" width="24" height="46" rx="4" fill="#b07619"/>
+        <rect x="440" y="300" width="24" height="46" rx="4" fill="#b07619"/>
+  <text x="300" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#b07619" letter-spacing="1">48V 100Ah</text>
+  <text x="300" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#8a93a3" letter-spacing="3">SOLAR RACK</text>
+</svg>

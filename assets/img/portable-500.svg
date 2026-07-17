@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f9fc"/><stop offset="1" stop-color="#eef1f6"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f649b6"/><stop offset="1" stop-color="#d6409f"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="rgba(15,23,42,.18)"/><stop offset="1" stop-color="rgba(15,23,42,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="430" rx="180" ry="26" fill="url(#shadow)"/>
+  
+        <rect x="160" y="200" width="280" height="210" rx="20" fill="url(#body)"/>
+        <rect x="160" y="200" width="280" height="210" rx="20" fill="none" stroke="#9a2e72" stroke-width="5"/>
+        <rect x="190" y="150" width="220" height="60" rx="14" fill="#9a2e72"/>
+        <rect x="255" y="130" width="90" height="26" rx="13" fill="#9a2e72"/>
+        <rect x="195" y="330" width="80" height="46" rx="8" fill="rgba(0,0,0,.2)"/>
+        <circle cx="360" cy="352" r="16" fill="rgba(255,255,255,.35)"/>
+        <circle cx="405" cy="352" r="16" fill="rgba(255,255,255,.35)"/>
+  <text x="300" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#9a2e72" letter-spacing="1">500Wh</text>
+  <text x="300" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#8a93a3" letter-spacing="3">PORTABLE</text>
+</svg>
