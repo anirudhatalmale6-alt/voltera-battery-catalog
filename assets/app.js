@@ -11,6 +11,7 @@
   function cardHTML(p) {
     return `
       <a class="card" href="product.html?id=${p.id}">
+        <svg class="spark" viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" fill="#4f9dff" stroke="#bcd8ff" stroke-width="1"/></svg>
         <div class="card-media"><img src="${p.image}" alt="${p.name}" loading="lazy"></div>
         <div class="card-body">
           <span class="tag">${p.category}</span>
